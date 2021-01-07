@@ -89,18 +89,3 @@ if(semName){
   }
 }
 
-// function App() {
-//   return(
-// <>
-
-//    <br/>
-//    <br/>
-//    <br/>
-//    <br/>
-//    <TascEditor/>
-//    </>
-//   )
-
-// }
-
-// export default App;

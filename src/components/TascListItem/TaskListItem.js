@@ -1,4 +1,5 @@
 import React from 'react';
+import PropTypes from 'prop-types'
 import '../TaskList/TaskList.css';
 
 const TaskListItem = ({number, name, onRemove }) => {
@@ -25,5 +26,11 @@ const TaskListItem = ({number, name, onRemove }) => {
     </li>
   );
 };
+
+TaskListItem.propTypes={
+  number: PropTypes.number.isRequired,
+  name: PropTypes.string.isRequired,
+  onRemove: PropTypes.func.isRequired
+}
 
 export default TaskListItem;
