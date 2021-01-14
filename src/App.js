@@ -76,11 +76,11 @@ if(semName){
         <ContactForm onAddTask={this.addtask} />
 
         <h2>Contacts</h2>
-
-        {visibleTasks.length > 1 && (
+        <Filter value={filter} onChangeFilter={this.changeFilter} />
+        {/* {visibleTasks.length > 1 && (
           <Filter value={filter} onChangeFilter={this.changeFilter} />
-        )}
-
+        )} */}
+{/* <TaskList tasks={visibleTasks} onRemoveTask={this.removeTask} /> */}
         {visibleTasks.length > 0 && (
           <TaskList tasks={visibleTasks} onRemoveTask={this.removeTask} />
         )}
